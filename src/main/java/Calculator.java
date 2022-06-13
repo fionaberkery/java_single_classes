@@ -1,41 +1,25 @@
 public class Calculator {
 
-    private int value1;
-    private int value2;
-
-    public Calculator(int value1, int value2){
-        this.value1 = value1;
-        this.value2 = value2;
+    public Calculator(){
     }
 
-
     // add
-    public int addValues() {
-        int num1 = value1;
-        int num2 = value2;
+    public int addValues(int num1, int num2) {
          return (num1 + num2);
     }
 
-
     // subtract
-    public int subtractValues() {
-        int num1 = value1;
-        int num2 = value2;
+    public int subtractValues(int num1, int num2) {
         return (num1 - num2);
     }
 
     // multiply
-    public int multiplyValues() {
-        int num1 = value1;
-        int num2 = value2;
+    public int multiplyValues(int num1, int num2){
         return (num1 * num2);
     }
 
-
-    //divide
-    public int divideValues() {
-        int num1 = value1;
-        int num2 = value2;
+   //divide
+    public double divideValues(double num1, double num2){
         return (num1 / num2);
     }
 

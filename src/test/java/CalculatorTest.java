@@ -8,26 +8,29 @@ public class CalculatorTest {
 
     @Before
     public void before() {
-        calculator = new Calculator(8, 4);
+        calculator = new Calculator();
     }
 
     @Test
     public void canAdd() {
-        assertEquals(12, calculator.addValues());
+        assertEquals(5, calculator.addValues(2,3));
     }
 
     @Test
     public void canSubtract(){
-        assertEquals(4, calculator.subtractValues());
+        assertEquals(4, calculator.subtractValues(8, 4));
     }
 
     @Test
     public void canMultiply(){
-        assertEquals(32, calculator.multiplyValues());
+        assertEquals(20, calculator.multiplyValues(2, 10));
     }
 
     @Test
-    public void canDivide(){
-        assertEquals(2, calculator.divideValues());
+    public void canDivideDoubles(){
+        assertEquals(2.8674560733384262, calculator.divideValues(150.14, 52.36), 0.0);
     }
 }
+
+
+
